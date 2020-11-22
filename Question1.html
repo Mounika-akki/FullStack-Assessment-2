@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" continue ="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Question 1</title>
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #total{
+                background-color: rgb(226, 226, 226);
+                margin: 0 auto;
+                width:70%;
+            }
+            .row {  
+            display: flex;
+            flex-wrap: wrap;
+            padding:20px;
+            margin:10px;
+            }
+            
+            label{
+                font-size: 20px;
+            }
+
+            .div1{
+                box-sizing: border-box;
+                flex:50%;
+            }
+
+            .div2{
+                flex:50%;
+                border:1px solid rgb(184, 180, 180); 
+                background-color: white;   
+            }
+            span{
+                background-color: white;
+            }
+
+            i{
+                margin:5px; 
+            }
+
+            input{
+                width:84%;
+                border:none;
+            }
+            #submit{
+                width:100px;
+                padding:5px;
+                margin:5px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+
+
+            @media only screen and (max-width: 800px) {
+                .total{
+                    width: 100%;
+                }
+                .row{   
+                    flex-direction: column;
+                    padding:10px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="total">
+            <form id="myform" onsubmit="myFunction()">
+                <div class='row'>
+                    <div class="div1">
+                        <label for="fullName" >Full Name</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-user"></i>
+                        <span><input required type="text" placeholder="Full Name" id="fullName"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="Address1">Address Line 1</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                        <span><input required type="text" placeholder="Address Line 1" id="Address1"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="Address2">Address Line 2</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                        <span><input required type="text" placeholder="Address Line 2" id="Address2"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-building"></i>
+                        <span><input required type="text" placeholder="City" id="city"></span>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="div1">
+                        <label for="state">State/Province/Region</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-map-marker"></i>
+                        <span><input required type="text" placeholder="State/Province/Region" id="state"></span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="postalcode">Postal Code/ZIP</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-envelope-open"></i>
+                        <span><input required type="number" placeholder="Postal Code/ZIP" id="postalcode"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-flag"></i>
+                        <span>
+                            <select style="width:78% ; border:none " id="country">
+                                <optgroup>
+                                    <option selected>Afghanistan</option>
+                                    <option>China</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Indonesia</option>
+                                    <option>Bangladesh</option>
+                                    <option>Turkey</option>
+
+                                </optgroup>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-user"></i>
+                        <span><input required type="email" placeholder="Email" id="email"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="div1">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="div2">
+                        <i class="fa fa-user"></i>
+                        <span><input required type="number" placeholder="Phone Number" id="phoneNumber"></span>
+                    </div>
+
+                </div>
+                <div style="text-align: center">
+                    <input id = "submit" type="submit">
+                </div>
+                
+            </form>
+
+        </div>
+
+
+        <script>
+            
+            function myFunction() {
+                alert("Thank you for submitting the form");
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" continue ="width=device-width, initial-scale=1.0" >
+        <title>Question2</title>
+        
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .total{
+                background-color: rgb(229, 242, 247);
+                width:80%;
+                margin:0 auto;
+            }
+            
+            .navbar {  
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;
+            }
+
+            .leftNav{
+            flex: 60%;
+            padding: 20px;
+            }
+            .rightNav{
+                flex:40%;
+                text-align: right;
+                padding:10px;
+            }
+     
+            .main {
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            flex: 70%;
+            background-color: rgb(172, 227, 243);
+            padding: 20px;
+            
+            }
+
+            #heading{
+                margin:0px;
+                font-size: 40px;
+                font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            button{
+                color: white;
+                background-color: rgb(86, 86, 255);
+                margin:5px;
+            }
+            button:hover{
+                background-color: blue;
+                font-size: 15px;;
+            }
+            #signup{
+                background-color: rgb(58, 126, 58); 
+            }
+            #signup:hover{
+                background-color: rgb(19, 185, 19);  
+            }
+            .headbutton{
+                font-size: 20px;
+                text-align: center;
+                height:40px;
+            }
+            .headbutton:hover{
+                font-size: 25px;
+            }
+            .lastSection{
+                display:flex;
+                flex-flow:row wrap;
+                padding:20px;
+            }
+            .subheading{
+                flex:45%;
+                margin:2%
+            }
+            .bold{
+                font-weight: bold;
+                font-size: large;
+            }
+            
+            @media screen and (max-width: 700px){
+                .row, .navbar {   
+                    flex-direction: column;
+                }
+                .total{
+                    width: 100%;
+                }
+                .subheading{
+                    flex:95%;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="total">
+            <div class="navbar">
+                <div class="leftNav">
+                    Starter template guvi task
+                </div>
+                <div class="rightNav">
+                    <a href="#"><button>Home</button></a>
+                    <a href="#"><button>About</button></a>
+                    <a href="#"><button>Contact</button></a>
+                </div>
+            </div>
+            <div class="main">
+                <p id="heading">Jumbotron heading</p>
+                <p style="text-align: center;">Cras Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, magni. Facere dolor magnam aliquam odit excepturi? Nihil modi tenetur quam. Esse veritatis laborum et dicta animi iusto assumenda excepturi eos</p>
+                <div>
+                    <a href="#"><button class="headbutton" id="signup">Sign up today</button></a>
+                </div>
+                
+                <div>
+                    <a href="#"><button class="headbutton" id="launch">Launch demo modal</button></a>
+                </div>
+            </div>
+            <div class="lastSection">
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    dolor sit amet, consectetur adipisicing elit. Odit praesentium ex laborum, vitae expedita quibusdam maxime in, totam sapiente corporis ipsa cumque explicabo nulla! Dolores atque repudiandae vero eligendi consequuntur!
+                </div>
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    Repudiandae laborum culpa dolor nostrum nobis ipsum, maxime fugit modi earum vel corporis natus dolorum quaerat doloremque labore corrupti neque repellendus libero.
+                </div>
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    Possimus reprehenderit, a eveniet assumenda quo incidunt nostrum cumque temporibus ducimus laboriosam eos beatae obcaecati minus. Neque consequatur itaque nemo nihil suscipit.
+                </div>
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    Ad soluta non cum dolorem, qui dolore perspiciatis fugiat dignissimos sapiente vel cupiditate quod, distinctio culpa nisi. Cumque magnam id facere perspiciatis!
+                </div>
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    Molestias suscipit nulla veritatis molestiae aliquid aut natus a accusamus sit ea laudantium odio quas officia commodi, est, maiores tempore corrupti? Repellendus.
+                </div>
+                <div class="subheading">
+                    <div class="bold">Sub Heading</div>
+                    Officia, sint consequuntur! Quibusdam recusandae sint, ad aut, quisquam animi libero, rerum sunt corporis aspernatur tempore dolore quae cum assumenda praesentium ipsam.
+                </div>
+            </div>
+            <hr>
+            <footer style="padding:20px;">
+                Starter &copy; <a href="#">guvi.in</a> 2020
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

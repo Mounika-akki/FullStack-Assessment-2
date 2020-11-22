@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" continue ="width=device-width, initial-scale=1.0" >
+        <title>Question 3</title>
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .flex-container{
+                display: flex;
+                flex-flow:row wrap;
+                align-items: center;
+            }
+            .product{
+                flex:33.33%;
+                border: 1px solid rgb(219, 218, 218);
+                padding:20px;
+            }
+            button{
+                background-color: rgb(1, 170, 1);
+                color:white;
+                padding:6px;
+            }
+            button:active{
+                background-color: rgb(2, 128, 2);
+                font-size: 13px;
+            }
+            .price{
+                font-size: 20px;;
+                font-weight: bold;
+            }
+            img{
+                width:400px;
+                height:250px;
+            }
+            .price-cart{
+                display: flex;
+                flex-flow: row wrap;
+                align-items:flex-start;
+            }
+            
+            .cart{
+                flex:30%;
+                text-align: right;
+            }
+
+            
+            @media only screen and (min-width : 1200px) {
+                .product{
+                    flex:30%;
+                }
+            }
+            
+            @media only screen and (max-width:992px){
+                .product{
+                    flex:45%;
+                }
+            } 
+            @media only screen and (max-width:320px){
+                .product{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: left;
+                    flex:90%;
+                }
+            } 
+
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product-image.jpg" alt="">
+                <h3>Product title</h3>
+                <p>Product description... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dolore facere ut delectus vel eos adipisci recusandae maiores labore minus distinctio rem, sit veniam, expedita optio velit provident. Expedita, excepturi.</p>
+                <div class="price-cart">
+                    <div class="price">$21.00</div>
+                    <div class="cart"><a href="#"><button>Add to cart</button></a></div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
